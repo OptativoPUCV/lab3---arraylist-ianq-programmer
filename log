@@ -47,3 +47,18 @@ Thu 30 Mar 2023 03:51:29 PM UTC:
  tests:  1|5
 total_score: 10/70
 b3c5072
+Thu 30 Mar 2023 03:55:21 PM UTC: 
+ arraylist.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:19:12: error: ‘dato’ undeclared (first use in this function)
+   19 |     return dato;
+      |            ^~~~
+arraylist.c:19:12: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:20:1: error: control reaches end of non-void function [-Werror=return-type]
+   20 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+66d5313
