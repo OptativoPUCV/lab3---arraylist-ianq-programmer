@@ -73,3 +73,24 @@ arraylist.c:16:50: error: ‘*listAux.capacity’ is used uninitialized [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 c49117d
+Thu 30 Mar 2023 03:56:22 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:62: error: expected ‘)’ before ‘;’ token
+   16 |   listAux->data = malloc(sizeof(void *) * (listAux->capacity);
+      |                         ~                                    ^
+      |                                                              )
+arraylist.c:19:20: error: expected ‘;’ before ‘}’ token
+   19 |     return listAux;
+      |                    ^
+      |                    ;
+   20 | }
+      | ~                   
+arraylist.c:20:1: error: control reaches end of non-void function [-Werror=return-type]
+   20 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+60a0a77
