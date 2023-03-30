@@ -62,3 +62,14 @@ arraylist.c:20:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 66d5313
+Thu 30 Mar 2023 03:55:32 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘createList’:
+arraylist.c:16:50: error: ‘*listAux.capacity’ is used uninitialized [-Werror=uninitialized]
+   16 |   listAux->data = malloc(sizeof(void *) * listAux->capacity);
+      |                                           ~~~~~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c49117d
