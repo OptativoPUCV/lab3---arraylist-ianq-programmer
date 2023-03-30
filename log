@@ -106,3 +106,14 @@ arraylist.c:16:42: error: invalid operands to binary * (have ‘void *’ and �
       |                   void *                           int
 Compilation failed
 1cf7a64
+Thu 30 Mar 2023 03:56:50 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘createList’:
+arraylist.c:16:51: error: ‘*listAux.capacity’ is used uninitialized [-Werror=uninitialized]
+   16 |   listAux->data = malloc(sizeof(void *) * (listAux->capacity));
+      |                                           ~~~~~~~~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a29c637
