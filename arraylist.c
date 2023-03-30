@@ -32,7 +32,8 @@ void append(ArrayList * l, void * data){
 }
 
 void push(ArrayList * l, void * data, int i){
-  if(i > l->size) return NULL;
+  if(i > l->size) 
+    return NULL;
   
   if(l->size == l->capacity){
     l->capacity = l->capacity * 2;
