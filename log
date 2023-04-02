@@ -266,3 +266,12 @@ Sun 02 Apr 2023 02:31:18 AM UTC:
  tests:  8|2
 total_score: 40/70
 67f51df
+Sun 02 Apr 2023 02:32:49 AM UTC: 
+ arraylist.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+arraylist.c:79:1: error: expected identifier or ‘(’ before ‘}’ token
+   79 | }
+      | ^
+Compilation failed
+348cc97
